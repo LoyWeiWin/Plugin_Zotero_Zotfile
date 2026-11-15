@@ -1,4 +1,12 @@
-/Makefile.in
+/dist/
+/research/
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+*.bak
 .DS_Store
-*.xpi
-*.icloud
+Thumbs.db
+.idea/
+.vscode/
+node_modules/

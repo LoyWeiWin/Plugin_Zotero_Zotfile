@@ -1,0 +1,4 @@
+* text=auto
+*.png binary
+*.xpi binary
+*.pdf binary

@@ -1,0 +1,20 @@
+:root { color-scheme: light dark; font: 13px system-ui, sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 24px; height: 100vh; display: flex; flex-direction: column; background: Canvas; color: CanvasText; }
+h1 { margin: 0; font-size: 25px; } header p { opacity: .7; margin: 5px 0 18px; }
+main { overflow: auto; flex: 1; min-height: 100px; padding-right: 8px; }
+fieldset, details { border: 1px solid GrayText; border-radius: 7px; padding: 13px 16px; margin: 0 0 16px; }
+legend, summary { font-size: 16px; font-weight: 600; } summary { cursor: pointer; }
+.row { display: flex; gap: 12px; align-items: center; margin: 11px 0; }
+.row > label { min-width: 225px; flex: 0 0 35%; }
+.row > input, .row > select, .row > textarea { flex: 1; min-width: 0; }
+.row > input[type="checkbox"] { flex: 0 0 auto; margin-left: 0; }
+input, select, textarea, button { font: inherit; color: CanvasText; background: Canvas; border: 1px solid GrayText; border-radius: 5px; padding: 7px 9px; }
+textarea { min-height: 75px; font-family: ui-monospace, monospace; }
+button { cursor: pointer; white-space: nowrap; }
+.primary { color: white; background: #245fa9; border-color: #245fa9; }
+.help { line-height: 1.5; opacity: .75; margin: 5px 0 12px; }
+#message { min-height: 20px; margin: 7px 0; }
+footer { display: flex; gap: 10px; align-items: center; border-top: 1px solid GrayText; padding-top: 14px; }
+#filename { flex: 1; overflow-wrap: anywhere; font-size: 12px; }
+input:focus-visible, button:focus-visible, textarea:focus-visible { outline: 2px solid #3575d3; outline-offset: 2px; }
