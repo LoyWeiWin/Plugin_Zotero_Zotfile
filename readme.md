@@ -8,15 +8,15 @@ ZotFile manages Zotero attachments: rename files using reference metadata, move 
 
 | Item | Value |
 | --- | --- |
-| Plugin version | 5.1.2.1009 |
+| Plugin version | 6.0.0 |
 | Tested Zotero version | 10.0.8 |
-| Manifest compatibility | Zotero 10.0.x |
+| Manifest compatibility | Zotero 10.0.8 |
 | Plugin ID | `zotfile@columbia.edu` |
 | Licence | GNU GPL v3; see [COPYING](COPYING) and source notices |
 
 ## Install
 
-1. Download [zotfile-5.1.2-zotero-10.0.8.xpi](releases/zotfile-5.1.2-zotero-10.0.8.xpi). On GitHub, use **Download raw file** on the file page.
+1. Download [zotfile-6.0.0.xpi](releases/zotfile-6.0.0.xpi). On GitHub, use **Download raw file** on the file page.
 2. In Zotero, open **Tools > Plugins**.
 3. Open the gear menu, choose **Install Plugin From File**, and select the XPI.
 4. Open **Tools > ZotFile > Settings** to configure folders and filename rules.
@@ -50,20 +50,10 @@ The output is `dist/zotfile-5.1.2-zotero-10.0.8.xpi`. No npm or pip packages are
 
 The XPI in `releases/` is the original tested binary, unchanged. A fresh build omits four non-runtime files from that original archive: its old `.gitignore`, Travis configuration, Makefile and upstream readme. Runtime file contents match the tested release; the ZIP hash differs because the packaging is cleaned up. See [releases/README.md](releases/README.md).
 
-## Validation
-
-Run the existing regression checks with:
-
-```bash
-node --test tests/promise.test.cjs tests/windows-paths.test.cjs
-```
-
-The earlier validation recorded 49 integration checks in Zotero 10.0.8 on Linux and 25 Node.js regression checks. The owner also confirmed testing in Zotero on 15 November 2026; the operating system and individual checks were not specified. See [docs/VALIDATION.md](docs/VALIDATION.md) for the scope of these results.
-
 ## Source and attribution
 
 Original ZotFile: Joscha Legewie and contributors. This port is independently maintained and is not an upstream ZotFile release. Copyright notices in the source are preserved. See [NOTICE.md](NOTICE.md), [COPYING](COPYING) and the [archived upstream readme](docs/UPSTREAM_README.md).
 
 The compatibility modules replace legacy startup, menus, settings, Promise, file-operation and PDF APIs. Repository preparation on 15 November 2026 changes documentation and packaging only; the tested plugin runtime is unchanged.
 
-To upload this package to GitHub, extract the repository ZIP, create a repository such as `zotfile-zotero10`, and upload the contents of this folder with `README.md` at the repository root. Use [RELEASE_NOTES.md](RELEASE_NOTES.md) for a release tagged `v5.1.2.1009` and attach the XPI from `releases/`.
+To upload this package to GitHub, extract the repository ZIP, create a repository such as `zotfile-zotero10`, and upload the contents of this folder with `README.md` at the repository root. Use [RELEASE_NOTES.md](RELEASE_NOTES.md) for a release tagged `v6.0.0` and attach the XPI from `releases/`.
